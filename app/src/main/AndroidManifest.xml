@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Oyunun arka planda çökmemesi ve WebView'in internete erişebilmesi için İnternet İzni -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- hardwareAccelerated="true" eklenerek 3D/WebGL çizimlerinin donanım hızlandırmalı çalışması sağlandı -->
     <application
         android:allowBackup="true"
         android:label="City Racer"
         android:supportsRtl="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:hardwareAccelerated="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <activity
